@@ -7,7 +7,8 @@
 
 ## Project Details:
 1. Creating objects and variables using JSON. 
-var bio = {
+
+`var bio = {
     "name" : "Yonglin Zhong",
     "role" : "Web Developer",
     "contacts" :{
@@ -24,4 +25,4 @@ var bio = {
     "HTML5", "CSS", "Javascript", "Bootstrab", "Responsive Design", "Less/Sass"
     ],
     "biopic" : "images/fry.jpg"    
-};
+};`
