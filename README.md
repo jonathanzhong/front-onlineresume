@@ -13,7 +13,8 @@
 
 For example:
 
-`var bio = {
+```
+var bio = {
     "name" : "Yonglin Zhong",
     "role" : "Web Developer",
     "contacts" :{
@@ -24,13 +25,14 @@ For example:
         "twitter":"zhongyl0722",
         "location": "San Jose",
         "blog": "http://jonathanzhong.github.io"
-    }, <br>
-    "welcomeMessage" : "Hola! I am Yonglin Zhong, new grad seeking for front-end development opportunity. Thank you very much for stopping by. If there is matching position, welcome to contact me! ",<br>
+    }, 
+    "welcomeMessage" : "Hola! I am Yonglin Zhong, new grad seeking for front-end development opportunity. Thank you very much for stopping by. If there is matching position, welcome to contact me! ",
     "skills" : [
     "HTML5", "CSS", "Javascript", "Bootstrab", "Responsive Design", "Less/Sass"
-    ],<br>
+    ],
     "biopic" : "images/fry.jpg"    
-};`
+};
+```
 
 
 3. Manipulated DOM Tree to add contents using JavaScript and jQuery.
@@ -39,11 +41,14 @@ Define a `display` function to loop over `bio`, `education`, `work`, `projects` 
 
 4. Responsive design for different viewport size to have a decent layout on both mobile devices and desktop.
 
-`@media only screen and (max-width: 1200px){}`
-`@media only screen and (max-width: 990px){}`
-`@media only screen and (max-width: 770px){}`
-`@media only screen and (max-width: 400px){}`
-`@media only screen and (min-width: 770px){}`
+```
+@media only screen and (max-width: 1200px){};
+@media only screen and (max-width: 990px){};
+@media only screen and (max-width: 770px){};
+@media only screen and (max-width: 400px){};
+@media only screen and (min-width: 770px){};
+```
+
 
 
 
