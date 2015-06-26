@@ -12,8 +12,7 @@
 
 2. Creating objects and variables using JSON. 
 
-For example:
-
+   For example:
 ```
 var bio = {
     "name" : "Yonglin Zhong",
