@@ -49,12 +49,13 @@ Define a `display` function to loop over `bio`, `education`, `work`, `projects` 
 @media only screen and (min-width: 770px){};
 ```
 
-##Result:
+## Result:
 Display the pages of desktop and mobile device.
 ![DesktopView](images/onlineResume.png)
 ![MobileView](images/onlineResumeMobile.png)
 
-
+## Notes:
+In the head of HTML `style.css` link should be after `bootstrp.css`, otherwise you won't be able to overide the style.
 
 
 
