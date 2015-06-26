@@ -4,9 +4,6 @@
 This is an HTML document. It contains information about how elements in the website
 are arranged. In other words, it describes the layout of a website.
 
-I can't wait to see the resumes you put together!
-
-Cameron Pittman, Udacity Course Developer
 -->
 
 <!--
@@ -19,11 +16,21 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <meta charset="utf-8">
 
   <!-- Tells the browser what the title of this page should be. -->
-  <title>Resume</title>
+  <title>Yonglin Zhong|Front-end Web Developer</title>
 
   <!-- Load the page styles. -->
+
+  <link href="css/bootstrap.min.css" rel = "stylesheet">
+
+  <link rel="stylesheet" href="css/featherlight.min.css">
+
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/bootstrap.min.css" rel = "stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="images/icon.ico">
+
 
   <!--
   jQuery is a common JavaScript library for reading and making changes to the
@@ -43,15 +50,21 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
 
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/featherlight.min.js" async></script>
+
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
-  <meta name="viewport" content="width=device-width">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body unresolved>
+<body>
   <div id="main">
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -59,23 +72,118 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-    <div id="header" class="center-content clearfix">
-      <ul id="topContacts" class='flex-box'></ul>
+
+    <div class="container">
+      <nav role = "navigation" class = "navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" data-target="navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Brand</a>
+        </div>
+
+        <div id="navbar-collapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#header">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#workExperience">Work Experience</a></li>
+            <li><a href="#letsConnect">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
+
+    <div id="header" class=" center-content">
+      <div class="row">
+        <div id="bio-name" class="col-md-12"></div>
+      </div>
+      <div class="row">
+        <ul id="topContacts" class='flex-box'></ul>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+      </div>
+      <div class="row">
+        <div id="bio-details" class="row"></div>
+
+      </div>
+      <div class="row">
+        <div id="skillset" class="col-md-12">
+
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+            <div class="skillbar-bar" style="background: #e67e22;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+            <div class="skillbar-bar" style="background: #3498db;"></div>
+            <div class="skill-bar-percent">75%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #2c3e50;"><span>JavaScript</span></div>
+            <div class="skillbar-bar" style="background: #2c3e50;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="50%">
+            <div class="skillbar-title" style="background: #46465e;"><span>jQuery</span></div>
+            <div class="skillbar-bar" style="background: #5a68a5;"></div>
+            <div class="skill-bar-percent">50%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="65%">
+            <div class="skillbar-title" style="background: #333333;"><span>Bootstrap</span></div>
+            <div class="skillbar-bar" style="background: #525252;"></div>
+            <div class="skill-bar-percent">65%</div>
+          </div> <!-- End Skill Bar -->
+
+          <script type="text/javascript">
+            jQuery(document).ready(function(){
+              jQuery('.skillbar').each(function(){
+                jQuery(this).find('.skillbar-bar').animate({
+                  width:jQuery(this).attr('data-percent')
+                },6000);
+              });
+            });
+          </script>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
     <div style='clear: both;'></div>
-    <div id="workExperience" class='gray'>
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
+
+    <div id="projects" class="center-content gray">
       <h2>Projects</h2>
+      <div class="row inner"></div>
     </div>
-    <div id="education" class='gray'>
+    <div id="project-details" class="center-content row">
+      <!-- New section to display project details in a jQuery lightbox -->
+    </div>
+    <div id="education" class='center-content'>
       <h2>Education</h2>
     </div>
-    <div id="mapDiv" >
-      <h2>Where I've Lived and Worked</h2>
+    <div id="workExperience" class='center-content gray'>
+      <h2>Work Experience</h2>
     </div>
-    <div id="letsConnect" class='dark-gray'>
+    <div id="mapDiv" class="center-content">
+      <h2>Where I've Lived and Worked</h2>
+      <div class="row"></div>
+    </div>
+    <div id="letsConnect" class='container-fluid dark-gray'>
       <h2 class='orange center-text'>Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
@@ -135,6 +243,16 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
     }
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-64347508-1', 'auto');
+    ga('send', 'pageview');
   </script>
 </body>
 </html>

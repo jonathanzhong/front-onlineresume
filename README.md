@@ -49,7 +49,10 @@ Define a `display` function to loop over `bio`, `education`, `work`, `projects` 
 @media only screen and (min-width: 770px){};
 ```
 
-
+##Result:
+Display the pages of desktop and mobile device.
+![DesktopView](images/onlineResume.png)
+![MobileView](images/onlineResumeMobile.png)
 
 
 
