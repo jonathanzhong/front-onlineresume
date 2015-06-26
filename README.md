@@ -1,4 +1,5 @@
 # Online Resume
+![](http://progressed.io/bar/100?title=Progress)
 
 ## Project Objective:
 1. Demonstrate your mastery of the language's syntax through a series of challenges. Each multipart problem mimics a real-life challenge that front-end developers face. 
