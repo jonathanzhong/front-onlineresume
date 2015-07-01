@@ -70,6 +70,8 @@ img {
   NavBar
 
 ***********/
+
+
 .navbar {
   margin-bottom: 0;
   -webkit-border-radius: 0;
@@ -127,13 +129,6 @@ img {
 
 }
 
-/*p {
-  font-size: 14px;
-  color: #333333;
-  line-height: 21px;
-  /*color:#525252;
-  font-size:12px;
-} */
 
 a {
   color: #333;
@@ -434,8 +429,23 @@ span {
 }
 
 
+#map {
+  display: block;
+  height: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-//media query
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+
+
+/*media query*/
+
 @media only screen and (max-width: 1200px) {
   #letsConnect {
     margin-top: 5%;
@@ -447,6 +457,7 @@ span {
 }
 
 @media only screen and (max-width:992px) {
+  
   .biopic {
     width: 175px;
   }
@@ -538,18 +549,7 @@ span {
   }
 }
 
-#map {
-  display: block;
-  height: 95%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
 
 @media only screen and (max-width: 400px) {
   .biopic {
