@@ -82,6 +82,18 @@ work.display = function () {
 var projects = {
     "projectss": [
         {
+            "title" : "Neighborhood Map",
+            "dates" : "07/2015",
+            "description" : '<a href = "http://neighborhoodmap.parseapp.com">Live Demo: Click Here</a>',
+            "images": ["images/neighborhoodmap.png"],
+            "details": {
+                "url": "https://github.com/jonathanzhong/front-NeighborhoodMap",
+                "image": "images/neighborhoodmap.png",
+                "description": "<ur><li>Developed single page application featuring a map of neighborhood with Knockout.JS using MVVM architecture.</li><li>Implemented third party APIs (Google Map and Duckduckgo) to add functionalities of map markers to identify nearby popular locations and provide additional information.</li></ur>",
+                "technologies": ["Browser Rendering Optimization", "Website Performance Optimization"]
+            }
+        },
+        {
             "title" : "Website Optimization",
             "dates" : "06/2015",
             "description" : "Optimized a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.",
@@ -215,24 +227,6 @@ var education = {
     ],
 
     "onlineCourses": [
-        {
-            "title" : "Intro HTML5 and CSS3",
-            "school" : "Udacity",
-            "dates" : "04/2015",
-            "url": "www.udacity.com"
-        },
-        {
-            "title" : "JavaScript Basics",
-            "school" : "Udacity",
-            "dates" : "04/2015",
-            "url": "www.udacity.com"
-        },
-        {
-            "title": "Intro to jQuery",
-            "school": "Udacity",
-            "dates":"05/2015",
-            "url": "www.udacity.com"
-        }
     ]
 };
 
@@ -259,7 +253,7 @@ education.display = function () {
         }
     }
 
-    $("#education").append(HTMLonlineClasses);
+    /*$("#education").append(HTMLonlineClasses);
     for (course in education.onlineCourses) {
         $("#education").append(HTMLschoolStart);
         var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
@@ -272,7 +266,7 @@ education.display = function () {
         lastOnlineEntry.append(formattedschoolTitle)
         .append(formattedonlineDates)
         .append(formattedonlineURL);
-    }
+    }*/
 
 }
 

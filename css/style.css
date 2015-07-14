@@ -4,13 +4,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   padding-top: 50px;
-
+  color: #000b00;
 }
 
 .clearfix {
@@ -32,7 +33,7 @@ p, div {
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #000b00;
   line-height: 48px;
   display: inline;
 }
@@ -40,7 +41,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: white;
   line-height: 29px;
 }
 
@@ -69,8 +70,6 @@ img {
   NavBar
 
 ***********/
-
-
 .navbar {
   margin-bottom: 0;
   -webkit-border-radius: 0;
@@ -80,13 +79,14 @@ img {
 .navbar-nav {
   float:none;
   margin: 0 auto;
-  display: inline;
+  display: table-cell;
   table-layout: fixed;
 }
 
 .nav.container-fluid {
   background-color: #222;
 }
+
 .navbar-inverse {
   background-color: #222;
   border-color: transparent;
@@ -98,7 +98,7 @@ img {
 
 
 .nav.container-fluid {
-  background-color: #222;
+  background-color: #7ebeab;
 }
 
 .navbar-nav {
@@ -106,9 +106,13 @@ img {
   text-align: center;
   > li {
     float: none;
-    display: inline-table;
+    display: inline-block;
     font-size: 1.2em;
   }
+}
+
+.navbar-nav>li>a {
+  color:#ffffff;
 }
 
 .date-text {
@@ -128,15 +132,15 @@ img {
 
 }
 
-
 a {
-  color: #333;
+  color: #000b00;
   font-weight: 700;
   text-decoration: none;
   margin-top: 10px;
   display: block;
   text-decoration: none;
   font-family: 'font-awesome';
+  font-size: 12pt;
 }
 
 .welcome-message {
@@ -161,102 +165,79 @@ p{
   font-size:14px;
 }
 
-.skillbar
-{
-    position: relative;
-
-    display: block;
-
-    width: 80%;
-    height: 15px;
-    margin-right: auto;
-    margin-bottom: 5px;
-    margin-left: auto;
-
-    -webkit-transition: .4s linear;
-       -moz-transition: .4s linear;
-        -ms-transition: .4s linear;
-         -o-transition: .4s linear;
-            transition: .4s linear;
-    -webkit-transition-property: width, background-color;
-       -moz-transition-property: width, background-color;
-        -ms-transition-property: width, background-color;
-         -o-transition-property: width, background-color;
-            transition-property: width, background-color;
-
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-    background: #eee;
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:5px;
+  margin-right: auto;
+  margin-left: auto;
+  width:80%;
+  background:#eee;
+  height:15px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
 }
 
-
-.skillbar-title
-{
-    font-size: 11px;
-    font-weight: bold;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 110px;
-
-    color: #fff;
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-            border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 4px;
-    -moz-border-radius-bottomleft: 3px;
-            border-bottom-left-radius: 3px;
-    background: #6adcfa;
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:11px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
 }
 
-
-.skillbar-title span
-{
-    line-height: 15px;
-
-    display: block;
-
-    height: 15px;
-    padding: 0 20px;
-
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-            border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-bottomleft: 3px;
-            border-bottom-left-radius: 3px;
-    background: rgba(0, 0, 0, .1);
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:15px;
+  line-height:15px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
 }
 
-
-.skillbar-bar
-{
-    width: 0;
-    height: 15px;
-
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-    background: #6adcfa;
+.skillbar-bar {
+  height:15px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
 }
 
-
-.skill-bar-percent
-{
-    font-size: 8px;
-    line-height: 15px;
-
-    position: absolute;
-    top: 0;
-    right: 10px;
-
-    height: 15px;
-
-    color: #fff;
-    color: rgba(0, 0, 0, .4);
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:8px;
+  height:15px;
+  line-height:15px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
 }
 
 
@@ -268,16 +249,16 @@ p{
 }
 
 .orange {
-  background-color: #F5AE23;
+  background-color: #bb5548;
 }
 
-.orange-text {
-  color: #F5AE23;
+.black-text {
+  color: balck;
+  font-weight: bold;
 }
 
 .color-text {
-  font-weight: bold;
-  color: white;
+  color: #f8fbf8;
 }
 
 .white-text {
@@ -285,41 +266,38 @@ p{
   color: white;
 }
 
-.gray {
-  background-color: #F3F3F3;
+.blue {
+  background-color:#583822;
   padding-bottom: 10px;
   clear:both;
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #203744;
+
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
-  background: url(../images/background.jpg);
+  background-color: #203744;
+  /*background: url(../images/background.jpg);*/
   background-position: left center;
   background-size: cover;
 }
 
 
-.flex-box
-{
-    display: -webkit-flex;
-    display:         flex;
-    display: -webkit-flex; /* to fix the overlapped problem displaying on safari */
-            flex-direction: row;
-
-    padding: 10px;
-
-            flex-wrap: wrap;
-            justify-content: space-around;
-    -webkit-flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -webkit-justify-content: flex-start;
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  display: -webkit-flex; /* to fix the overlapped problem displaying on safari */
+  -webkit-flex-direction:row;
+  -webkit-flex-wrap:wrap;
+  -webkit-justify-content:flex-start;
 }
-
 
 .center-content {
   padding-top: 2.5%;
@@ -332,23 +310,19 @@ ul {
   list-style-type: none;
 }
 
-.biopic
-{
-    display: block;
-
-    width: 200px;
-    margin-top: -10px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
-    padding: 5px;
-
-    border: 2px solid #fff;
-    -webkit-border-radius: 200px 200px 200px 200px;
-       -moz-border-radius: 200px 200px 200px 200px;
-            border-radius: 200px 200px 200px 200px;
+.biopic {
+  display: block;
+  padding: 5px;
+  width: 200px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 2px solid #fff;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
 
 
 
@@ -366,7 +340,6 @@ hr {
 
 h1#name {
   font-size: 3.8em;
-  color: #F5AE23;
 }
 
 h1#name + span {
@@ -408,6 +381,7 @@ span {
 
 #letsConnect {
   text-align: center;
+  background-color: #000b00;
 }
 
 .project-entry {
@@ -415,8 +389,8 @@ span {
   padding: 10px;
 }
 
-.project-entry:nth-child(2n+1) {
-  background-color: #eee;
+.project-entry {
+  background-color: white;
 }
 
 .project-entry p.project-description {
@@ -459,23 +433,8 @@ span {
 }
 
 
-#map {
-  display: block;
-  height: 95%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
-
-
-
-/*media query*/
-
+//media query
 @media only screen and (max-width: 1200px) {
   #letsConnect {
     margin-top: 5%;
@@ -487,7 +446,6 @@ span {
 }
 
 @media only screen and (max-width:992px) {
-  
   .biopic {
     width: 175px;
   }
@@ -579,7 +537,18 @@ span {
   }
 }
 
+#map {
+  display: block;
+  height: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
 
 @media only screen and (max-width: 400px) {
   .biopic {
