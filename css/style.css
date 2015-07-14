@@ -432,7 +432,25 @@ span {
   margin-right: 10px;
 }
 
+#map {
+  display: block;
+  height: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+#footerContacts {
+  body {
+    color: #f8fbf8;!important
+  }
+
+}
 
 //media query
 @media only screen and (max-width: 1200px) {
@@ -455,10 +473,9 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
-  #letsConnect {
-    margin-top: 10%;
+  #mapDiv {
+    padding-bottom: 10%;
   }
-
   .navbar-nav {
     float: none;
     margin: 0;
@@ -537,18 +554,6 @@ span {
   }
 }
 
-#map {
-  display: block;
-  height: 95%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
 
 @media only screen and (max-width: 400px) {
   .biopic {
@@ -558,6 +563,9 @@ span {
   #footerContacts.flex-box {
     display: block;
     text-align: center;
+  }
+  #map {
+    height: 260px;
   }
 }
 
