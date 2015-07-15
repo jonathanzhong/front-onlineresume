@@ -27,13 +27,55 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+/* star */
+
+hr.star-light,
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+hr.star-primary {
+    border-color: white;
+}
+
+hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+
 p, div {
     font-family: 'font-awesome', sans-serif;
 }
 
 h1 {
   font-size: 40px;
-  color: #000b00;
+  color: white;
   line-height: 48px;
   display: inline;
 }
@@ -57,7 +99,6 @@ h4 {
   color: #4A4A4A;
   line-height: 17px;
 }
-
 
 
 img {
@@ -314,10 +355,6 @@ ul {
   display: block;
   padding: 5px;
   width: 200px;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 2px solid #fff;
   margin-bottom: 20px;
   margin-top: -10px;
   margin-right: auto;
@@ -328,7 +365,7 @@ ul {
 
 
 hr {
-  margin: 0 !important;
+  margin: 0;
 }
 
 
@@ -343,7 +380,7 @@ h1#name {
 }
 
 h1#name + span {
-  color: #fff;
+  color: #000b00;
   font-size: 1.4em;
   font-weight: 200;
 }
@@ -434,7 +471,7 @@ span {
 
 #map {
   display: block;
-  height: 95%;
+  height: 78%;
   margin-left: 5%;
   margin-right: 5%;
 }

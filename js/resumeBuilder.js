@@ -4,14 +4,14 @@ var bio = {
     "role" : "Front-end Web Developer",
     "contacts" :{
         "mobile": "716-903-4505",
-        "email": "zhongyl0722@hotmail.com",
+        "email": '<a href="#contact">zhongyl0722</a>',
         "location": "San Jose",
         "github":'<a href="https://github.com/jonathanzhong">jonathanzhong</a>',
         "twitter":'<a href="https://twitter.com/zhongyl0722">zhongyl0722</a>',
         "location": "San Jose",
         "blog": '<a href="http://www.yonglinzhong.com">http://yonglinzhong.com</a>'
     },
-    "welcomeMessage" : "Hola! I am Yonglin Zhong, a recent new grad seeking for a front-end web developer opportunity.<br>There is so much fun playing around with the newest front-end technology. I love coding, which can lead to a result, bad or good. Most of the reason, I choose to become a front-end developer, is that awesome design and out of box thinking interest me! <br>Thank you for stopping by. If there is any question, more than welcome to contact me!",
+    "welcomeMessage" : 'Hola! Looking for a front-end web developer opportunity.Thank you for stopping by. Welcome to contact me!',
     "skills" : [
     "HTML5", "CSS", "Javascript", "Jquery", "AJAX", "Responsive Design"
     ],
